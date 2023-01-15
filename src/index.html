@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div class="layout">
+      <div class="form-container">
+        <div class="form-container__heading">How did we do?</div>
+        <div class="form-container__description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </div>
+
+        <form action="#" id="ratingForm" class="rating-form">
+          <label class="rating-item"
+            >1
+            <input type="radio" value="1" name="rating" />
+          </label>
+          <label class="rating-item"
+            >2
+            <input type="radio" value="2" name="rating" />
+          </label>
+          <label class="rating-item"
+            >3
+            <input type="radio" value="3" name="rating" />
+          </label>
+          <label class="rating-item"
+            >4
+            <input type="radio" value="4" name="rating" />
+          </label>
+          <label class="rating-item"
+            >5
+            <input type="radio" value="5" name="rating" />
+          </label>
+        </form>
+        <button type="button" class="btn__submit">Submit</button>
+      </div>
+
+      <div class="state-submitted">
+        <div class="selected-rating-wrap">
+          <span class="selected-rating">
+            You selected
+            <span id="rating">4</span>
+            out of 5
+          </span>
+        </div>
+        <div class="state-submitted__heading">Thank you!</div>
+        <div class="state-submitted__description">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
