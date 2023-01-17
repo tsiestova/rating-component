@@ -7,6 +7,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const isProduction = process.env.NODE_ENV == "production";
 
+
 const stylesHandler = "style-loader";
 const config = {
   entry: "./src/index.js",
@@ -22,10 +23,10 @@ const config = {
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
     new HtmlWebpackPlugin({
       template: "./src/index.html",
+      filename: 'index.html',
       scriptLoading: "blocking",
       inject: "head",
     }),
-
     new MiniCssExtractPlugin(),
 
     new CopyPlugin({

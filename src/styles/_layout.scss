@@ -13,4 +13,14 @@ body {
     align-items: center;
     height: 100%;
   }
+
+  &.success {
+    .form-container {
+      display: none;
+    }
+
+    .state-submitted {
+      display: block;
+    }
+  }
 }

@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- Rating state start -->
-    <div class="layout">
+    <div class="layout" id="page">
       <div class="form-container">
         <div class="form-container__heading">How did we do?</div>
         <div class="form-container__description">
@@ -30,7 +30,7 @@
           is appreciated to help us improve our offering!
         </div>
 
-        <form action="#" id="ratingForm" class="rating-form">
+        <form id="rating-form" class="rating-form">
           <label class="rating-item"
             >1
             <input type="radio" value="1" name="rating" />
@@ -51,15 +51,14 @@
             >5
             <input type="radio" value="5" name="rating" />
           </label>
+          <button type="submit" class="btn__submit">Submit</button>
         </form>
-        <button type="button" class="btn__submit">Submit</button>
       </div>
-
       <div class="state-submitted">
         <div class="selected-rating-wrap">
           <span class="selected-rating">
             You selected
-            <span id="rating">4</span>
+            <span id="user-rating"></span>
             out of 5
           </span>
         </div>
