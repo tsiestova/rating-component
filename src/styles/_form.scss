@@ -95,8 +95,27 @@
     line-height: 51px;
   }
 
-  input {
+  //input {
+  //  display: none;
+  //}
+
+  &:hover {
+    @include breakpoint(desktop) {
+      background-color: var(--orange);
+      cursor: pointer;
+      color: var(--pure-white);
+    }
+  }
+
+  input[type="radio"] {
     display: none;
+  }
+}
+
+.rating-item {
+  &:has(input[type="radio"]:checked) {
+    background-color: var(--medium-gray);
+    color: var(--pure-white);
   }
 }
 
@@ -115,5 +134,13 @@
     font-size: 15px;
     line-height: 19px;
     letter-spacing: 2px;
+  }
+
+  &:hover {
+    @include breakpoint(desktop) {
+      background-color: var(--pure-white);
+      color: var(--orange);
+      cursor: pointer;
+    }
   }
 }
